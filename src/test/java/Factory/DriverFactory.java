@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.time.Duration;
 
-public class DiverFactory {
+public class DriverFactory {
 
     public final static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
@@ -38,8 +38,8 @@ public class DiverFactory {
 
         }
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-        DiverFactory.driver.set(driver);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+        DriverFactory.driver.set(driver);
         return driver;
     }
 

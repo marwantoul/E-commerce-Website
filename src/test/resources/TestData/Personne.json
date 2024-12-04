@@ -1,0 +1,19 @@
+{
+  "user": {
+    "first name": "MARWA",
+    "last name": "Doe",
+    "email": "foul745@example.com",
+    "password": "Password123",
+    "day": "23",
+    "month": "August",
+    "year": "1990",
+    "address1": "123 Main St,",
+    "address2": "Anytown, USA",
+    "country": "United States",
+    "company": "XYZ Corp",
+    "state": "Texas",
+    "city": "GETFTR",
+    "zipcode": "20214",
+    "mobileNumber": "33695874"
+  }
+}
