@@ -20,6 +20,7 @@ public class HomePage extends BasePage {
     By mencategory = By.xpath("/html/body/section[2]/div[1]/div[1]/div[1]/div/div[1]/div[2]/div[1]/h4/a");
     By Tshirts = By.xpath("/html/body/section[2]/div[1]/div[1]/div[1]/div/div[1]/div[2]/div[2]/div/ul/li[1]/a");
     By brandPolo = By.xpath("//a[@href='/brand_products/Polo']");
+    By Logoutlink = By.xpath("/html/body/header/div/div/div/div[2]/div/ul/li[4]/a");
 
 
     public boolean isHomePageDisplayed(){
@@ -50,6 +51,12 @@ public class HomePage extends BasePage {
 
     public void deleteaccount(){
         driver.findElement(deleteaccount).click();
+
+    }
+
+    public void logout (){
+
+        driver.findElement(Logoutlink).click();
 
     }
 }
