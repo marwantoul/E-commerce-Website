@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import Option.JsonReader;
 
-public class Registration {
+public class Register_User {
 
     WebDriver driver = DriverFactory.getDriver();
     HomePage homepage = new HomePage(driver);
@@ -22,19 +22,20 @@ public class Registration {
 
     @Given("the user navigate to the website")
     public void the_user_navigate_to_the_website() {
+        System.out.println("the user navigate to the website");
 
-        homepage.HomeLinkPage("http://automationexercise.com");
     }
     @And("the user verify that the home page is visible successfully")
     public void the_user_verify_that_the_home_page_is_visible_successfully() {
         boolean WelcomeDisplayed = new HomePage(driver).isHomePageDisplayed();
         Assert.assertTrue(WelcomeDisplayed, "AutomationExercise");
-
+        System.out.println("the user verify that the home page is visible successfully");
     }
     @When("the user click on the Signup Login button")
     public void the_user_click_on_the_Signup_Login_button() {
 
         homepage.SignupLoginaccess();
+        System.out.println("the user click on the Signup Login button");
 
     }
     @Then("the user verify that Signup Login page is visible successfully")
@@ -54,7 +55,9 @@ public class Registration {
     }
     @When("the user click the Signup button")
     public void the_user_click_the_button() {
+
         signupLogin.ClickSignupButton();
+        System.out.println("the user click the Signup button");
     }
 
     @Then("the user verify that the ENTER ACCOUNT INFORMATION is visible")
@@ -72,16 +75,20 @@ public class Registration {
         String dobMonth = jsonReader.getUserMonth();
         String dobYear = jsonReader.getUserYear();
         signup.signupwithfullinformation(password, dobDay, dobMonth, dobYear);
+        System.out.println("he user fill in account details like Title, Name, Email, Password, Date of Birth");
+
     }
 
     @When("the user select the checkboxes for Sign up for our newsletter and Receive special offers from our partners")
     public void the_user_select_the_checkboxes_for_Sign_up_for_our_newsletter_and_Receive_special_offers_from_our_partners (){
 
         signup.selectNewsletterandOfferCheckbox();
+        System.out.println("he user select the checkboxes");
+
     }
 
     @And("the user fill in details for First name, Last name, Company, Address, etc")
-    public void the8user_fill_in_details_for_Firstname_Lastname_Company_Address_etc() {
+    public void the_user_fill_in_details_for_Firstname_Lastname_Company_Address_etc() {
         String FirstName = jsonReader.getUserFirstName();
         String LastName = jsonReader.getUserLastName();
         String Company = jsonReader.getUserCompany();
@@ -93,12 +100,15 @@ public class Registration {
         String ZipCode = jsonReader.getUserZipCode();
         String MobileNumber = jsonReader.getUserMobileNumber();
         signup.signupwithfullOtherinformation(FirstName,LastName,Company,Adress1,Adress2,Country,State,City,ZipCode,MobileNumber);
+        System.out.println("the user fill in details for First name, Last name, Company, Address, etc");
 
     }
 
     @Then("the user click the Create Account button")
     public void the_user_click_the_Create_Account_button() {
         signup.ClickSignupButton();
+        System.out.println("he user click the Create Account button");
+
     }
 
     @Then("the user verify that ACCOUNT CREATED is visible")
@@ -110,6 +120,7 @@ public class Registration {
     @When("the user click the CONTINUE button")
     public void the_user_click_the_CONTINUE_button() {
         accountCreated.ClickOKButton();
+        System.out.println("he user click the CONTINUE button");
 
 
     }
@@ -126,7 +137,10 @@ public class Registration {
 
     @When("the user click the Delete Account button")
     public void the_user_click_the_Delete_Account_button() {
+
         homepage.deleteaccount();
+        System.out.println("the user click the Delete Account button");
+
     }
 
     @Then("the user verify that ACCOUNT DELETED is visible")
@@ -137,7 +151,10 @@ public class Registration {
 
     @Then("the user click the Continue button")
     public void the_user_click_the_Continue_button() {
+
         accountDelete.ClickOKButtonafterdeletedaccount();
+        System.out.println("the user click the Continue button");
+
     }
 
 

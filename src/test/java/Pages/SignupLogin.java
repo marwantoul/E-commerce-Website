@@ -15,17 +15,13 @@ public class SignupLogin extends BasePage {
     By NameInput = By.xpath("//input[@name='name']");
     By emailInput = By.xpath("/html/body/section/div/div/div[3]/div/form/input[3]");
     By buttonInput = By.xpath("/html/body/section/div/div/div[3]/div/form/button");
+    By emailloginInput = By.xpath("/html/body/section/div/div/div[1]/div/form/input[2]");
+    By passwordloginInput = By.xpath("/html/body/section/div/div/div[1]/div/form/input[3]");
+    By loginbutton = By.xpath("/html/body/section/div/div/div[1]/div/form/button");
+    By ErrorMessage = By.xpath("/html/body/section/div/div/div[1]/div/form/p");
+    By LoginPageMEssage = By.xpath("/html/body/section/div/div/div[1]/div[1]/h2");
 
 
-
-//    public void isSignupLoginDisplayed1(){
-//        WebElement val = driver.findElement(MsgSignupLogin);
-//
-//        String msg = val.getText();
-//
-//        System.out.println("mmmmmmm"+msg);
-//
-//    }
 
     public boolean isSignupLoginDisplayed(){
 
@@ -45,4 +41,39 @@ public class SignupLogin extends BasePage {
         driver.findElement(buttonInput).click();
 
     }
+
+    public void validlogin(String email, String name) {
+
+        driver.findElement(emailloginInput).sendKeys("antoulmarwa1990@gmail.com");
+        driver.findElement((passwordloginInput)).sendKeys("Mayarmiral20242021-");
+
+    }
+
+    public void invalidlogin(String email, String name) {
+
+        driver.findElement(emailloginInput).sendKeys("test@test.com");
+        driver.findElement((passwordloginInput)).sendKeys("1234");
+
+    }
+
+    public void LogInButton(){
+
+        driver.findElement(loginbutton).click();
+
+    }
+
+    public String MessageErrorDisplayed () {
+
+        String MessageError = driver.findElement(ErrorMessage).getText();
+
+        return MessageError;
+    }
+
+    public String LoginPAgeDisplayed () {
+
+        String loginpagemessage = driver.findElement(LoginPageMEssage).getText();
+
+        return loginpagemessage;
+    }
+
 }
