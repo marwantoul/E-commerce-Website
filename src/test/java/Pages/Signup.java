@@ -51,7 +51,6 @@ public class Signup extends BasePage {
     private void selectDropdownValue(By dropdownLocator, String valueToSelect) {
         Select dropdown = new Select(driver.findElement(dropdownLocator));
         dropdown.selectByVisibleText(valueToSelect);
-        // Vous pouvez aussi utiliser selectByValue ou selectByIndex selon ce qui est le mieux
     }
 
     public void selectNewsletterandOfferCheckbox() {
