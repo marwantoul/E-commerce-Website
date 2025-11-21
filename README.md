@@ -6,11 +6,11 @@
 
 ✅ Test Case 4: Logout User -> OK
 
-✅ Test Case 5: Register User with existing email
+✅ Test Case 5: Register User with existing email -> OK
 
-✅ Test Case 6: Contact Us Form
+✅ Test Case 6: Contact Us Form -> OK
 
-✅ Test Case 7: Verify Test Cases Page
+✅ Test Case 7: Verify Test Cases Page -> OK
 
 ✅ Test Case 9: Search Product
 
