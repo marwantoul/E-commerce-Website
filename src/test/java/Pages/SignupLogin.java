@@ -20,6 +20,8 @@ public class SignupLogin extends BasePage {
     By loginbutton = By.xpath("/html/body/section/div/div/div[1]/div/form/button");
     By ErrorMessage = By.xpath("/html/body/section/div/div/div[1]/div/form/p");
     By LoginPageMEssage = By.xpath("/html/body/section/div/div/div[1]/div[1]/h2");
+    By ErrorMessageExistingemail = By.xpath("/html/body/section/div/div/div[3]/div/form/p");
+    By ContactUSLink = By.xpath("/html/body/header/div/div/div/div[2]/div/ul/li[8]/a");
 
 
 
@@ -33,6 +35,13 @@ public class SignupLogin extends BasePage {
 
         driver.findElement(NameInput).sendKeys(name);
         driver.findElement(emailInput).sendKeys(email);
+
+    }
+
+    public void signupwithexistingemail(String name, String email){
+
+        driver.findElement(NameInput).sendKeys("test");
+        driver.findElement(emailInput).sendKeys("antoulmarwa1990@gmail.com");
 
     }
 
@@ -74,6 +83,19 @@ public class SignupLogin extends BasePage {
         String loginpagemessage = driver.findElement(LoginPageMEssage).getText();
 
         return loginpagemessage;
+    }
+
+    public String ErrorMessageExistingemail () {
+
+        String errorMessageExistingemail = driver.findElement(ErrorMessageExistingemail).getText();
+
+        return errorMessageExistingemail;
+    }
+
+    public void ContactUsLink (){
+
+        driver.findElement(ContactUSLink).click();
+
     }
 
 }

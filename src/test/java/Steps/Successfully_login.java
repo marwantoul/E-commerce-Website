@@ -28,7 +28,7 @@ public class Successfully_login {
     }
 
     @Then("the user verify that {string} is visible")
-    public void the_user_verify_that_is_visible() {
+    public void the_user_verify_that_is_visible(String text) {
         String RA = "marwa antoul";
         System.out.println("résultat attendu"+RA);
         String RO = homepage.Logged_in_as_username();
