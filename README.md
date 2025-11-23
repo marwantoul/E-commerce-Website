@@ -12,6 +12,8 @@
 
 ✅ Test Case 7: Verify Test Cases Page -> OK
 
+✅ Test Case 8: Verify All Products and product detail page
+
 ✅ Test Case 9: Search Product
 
 ✅ Test Case 10: Verify Subscription in home page
