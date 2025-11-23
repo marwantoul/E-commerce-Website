@@ -7,4 +7,4 @@ Feature: Logout User
     When the user enter a email "email" and password "password" valids
     And the user click the login button
     And the user click logout link
-    Then the user verify that Signup / Login page is visible
+    Then the user verify that Signup and Login page is visible

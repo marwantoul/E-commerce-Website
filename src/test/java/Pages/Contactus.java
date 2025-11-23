@@ -18,13 +18,13 @@ public class Contactus extends BasePage {
     }
 
     By ContactUs = By.xpath("/html/body/div[1]/div[1]/div/div/h2");
-    By username = By.xpath("/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[1]/input");
-    By useremail = By.xpath("/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[2]/input");
-    By subject = By.xpath("/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[3]/input");
-    By message = By.xpath("/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[4]/textarea");
-    By PieceJointe = By.xpath("/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[5]/input");
-    By SubmitButton = By.xpath("/html/body/div[1]/div[2]/div[1]/div/div[3]/form/div[6]/input");
-    By SuccessMessage = By.xpath("/html/body/div[1]/div[2]/div[1]/div/div[2]");
+    By username = By.name("name");
+    By useremail = By.name("email");
+    By subject = By.name("subject");
+    By message = By.id("message");
+    By PieceJointe = By.name("upload_file");
+    By SubmitButton = By.name("submit");
+    By SuccessMessage = By.cssSelector("div.status.alert.alert-success");;
 
     public String isContactUsDisplayed() {
 
