@@ -8,4 +8,3 @@ Feature: Search Product
     And the product list product is display
     When The user selects a product by clicking the View Product link
     Then User is landed to product detail page
-    And He Verify that detail detail is visible

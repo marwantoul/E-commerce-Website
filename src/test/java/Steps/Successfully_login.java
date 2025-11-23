@@ -15,7 +15,7 @@ public class Successfully_login {
 
     @When("the user enter a email {string} and password {string} valids")
     public void the_user_enter_a_email_and_password_valids(String email, String password) {
-        signupLogin.validlogin(email,password);
+        signupLogin.performLogin("antoulmarwa1990@gmail.com", "Mayarmiral20242021-");
 
         System.out.println("the user enter a email and password valids");
     }

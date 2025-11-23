@@ -18,14 +18,14 @@ public class LogOutUser {
     public void the_user_click_logout_link() {
         homepage.logout();
     }
-    @Then("the user verify that Signup \\/ Login page is visible")
-    public void the_user_verify_that_signup_login_page_is_visible() {
-        String RA = "Login to your account";
-        System.out.println("résultat attendu"+RA);
-        String RO = signupLogin.LoginPAgeDisplayed();
-        System.out.println("résultat obtenu"+RO);
-        Assert.assertEquals(RA, RO, "Verify that login page is visible");
+
+    @Then("the user verify that Signup and Login page is visible")
+    public void the_user_verify_that_signup_and_login_page_is_visible() {
+        String expected = "Login to your account";
+        String actual = signupLogin.getDisplayedMessage(signupLogin.getLoginPageMessageLocator());
+        Assert.assertEquals(actual, expected, "Verify that Login page is visible");
     }
+
 
 
 }

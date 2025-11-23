@@ -17,17 +17,19 @@ public class unsuccessfully_login {
 
     @When("the user enter a email {string} and password {string} invalids")
     public void the_user_enter_a_email_and_password_invalids(String email, String password) {
-    signupLogin.invalidlogin(email, password);
+        signupLogin.performLogin("test@test.com", "1234");
         System.out.println("the user enter a email and password invalids");
 
     }
+
     @Then("the user verify that the error message is visible")
     public void the_user_verify_that_the_error_message_is_visible() {
-        String RA = "Your email or password is incorrect!";
-        System.out.println("résultat attendu"+RA);
-        String RO = signupLogin.MessageErrorDisplayed();
-        System.out.println("résultat obtenu"+RO);
-        Assert.assertEquals(RA, RO, "Verify that the error message is visible");
+        String expected = "Your email or password is incorrect!";
+        String actual = signupLogin.getDisplayedMessage(signupLogin.getErrorMessageLocator());
+        System.out.println("Résultat attendu: " + expected);
+        System.out.println("Résultat obtenu: " + actual);
+        Assert.assertEquals(actual, expected, "Verify that the error message is visible");
     }
+
 
 }

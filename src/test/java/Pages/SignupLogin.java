@@ -38,7 +38,7 @@ public class SignupLogin extends BasePage {
 
     }
 
-    public void signupwithexistingemail(String name, String email){
+    public void signupwithexistingemail(){
 
         driver.findElement(NameInput).sendKeys("test");
         driver.findElement(emailInput).sendKeys("antoulmarwa1990@gmail.com");
@@ -51,19 +51,15 @@ public class SignupLogin extends BasePage {
 
     }
 
-    public void validlogin(String email, String name) {
 
-        driver.findElement(emailloginInput).sendKeys("antoulmarwa1990@gmail.com");
-        driver.findElement((passwordloginInput)).sendKeys("Mayarmiral20242021-");
+    public void performLogin(String email, String password) {
+        driver.findElement(emailloginInput).clear();
+        driver.findElement(emailloginInput).sendKeys(email);
 
+        driver.findElement(passwordloginInput).clear();
+        driver.findElement(passwordloginInput).sendKeys(password);
     }
 
-    public void invalidlogin(String email, String name) {
-
-        driver.findElement(emailloginInput).sendKeys("test@test.com");
-        driver.findElement((passwordloginInput)).sendKeys("1234");
-
-    }
 
     public void LogInButton(){
 
@@ -71,26 +67,26 @@ public class SignupLogin extends BasePage {
 
     }
 
-    public String MessageErrorDisplayed () {
 
-        String MessageError = driver.findElement(ErrorMessage).getText();
-
-        return MessageError;
+    // Méthode générique pour récupérer le texte d'un élément
+    public String getDisplayedMessage(By locator) {
+        return driver.findElement(locator).getText();
     }
 
-    public String LoginPAgeDisplayed () {
 
-        String loginpagemessage = driver.findElement(LoginPageMEssage).getText();
-
-        return loginpagemessage;
+    // Getters pour les locators
+    public By getErrorMessageLocator() {
+        return ErrorMessage;
     }
 
-    public String ErrorMessageExistingemail () {
-
-        String errorMessageExistingemail = driver.findElement(ErrorMessageExistingemail).getText();
-
-        return errorMessageExistingemail;
+    public By getLoginPageMessageLocator() {
+        return LoginPageMEssage;
     }
+
+    public By getErrorMessageExistingEmailLocator() {
+        return ErrorMessageExistingemail;
+    }
+
 
     public void ContactUsLink (){
 
