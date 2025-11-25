@@ -1,6 +1,6 @@
-Feature: Search Product
+Feature: Product list and details
 
-  Scenario: Test Case page
+  Scenario: Product list and details
     Given the user navigate to the website
     And the user verify that the home page is visible successfully
     When he user click the Products link
