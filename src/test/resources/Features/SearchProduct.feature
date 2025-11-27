@@ -1,5 +1,4 @@
 Feature: Search Product
-
   Scenario: Search Product
     Given the user navigate to the website
     And the user verify that the home page is visible successfully

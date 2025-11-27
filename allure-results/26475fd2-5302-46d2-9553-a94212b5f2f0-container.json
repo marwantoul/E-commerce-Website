@@ -1,0 +1,1 @@
+{"uuid":"26475fd2-5302-46d2-9553-a94212b5f2f0","name":"Scenario: User registers successfully","children":["ba27fcf3-2be1-4ae6-b2d8-16b0ec9e0c29"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764229518465,"stop":1764229565916}],"afters":[],"start":1764229518454,"stop":1764229598591}

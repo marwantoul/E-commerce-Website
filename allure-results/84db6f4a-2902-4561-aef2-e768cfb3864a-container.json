@@ -1,0 +1,1 @@
+{"uuid":"84db6f4a-2902-4561-aef2-e768cfb3864a","name":"Scenario: Search Product","children":["4364407d-4456-4417-a98c-8d6ed4c9eaa0"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764230628626,"stop":1764230713136}],"afters":[],"start":1764230628625,"stop":1764230713267}

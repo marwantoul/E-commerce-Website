@@ -1,0 +1,1 @@
+{"uuid":"7260faa7-8f06-45c9-a7b3-676f1a36d2a9","name":"Scenario: Test Case page","children":["2363118a-c13f-4604-9dc2-44c955210913"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764230628630,"stop":1764230677042}],"afters":[],"start":1764230628602,"stop":1764230699620}

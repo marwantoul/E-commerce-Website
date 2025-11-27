@@ -1,0 +1,1 @@
+{"uuid":"0d8f0677-9ebe-4c9c-a092-4dba2e7d2da2","name":"Scenario: Login with invalid credentials","children":["3bd7a8cc-efda-4f2f-9d6b-c2952e283c63"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764230978024,"stop":1764231003233}],"afters":[],"start":1764230978012,"stop":1764231011752}

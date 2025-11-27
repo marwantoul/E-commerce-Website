@@ -4,6 +4,10 @@ import Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HomePage extends BasePage {
 
@@ -12,7 +16,7 @@ public class HomePage extends BasePage {
     }
 
 
-    By Msgdashboard = By.xpath("/html/body/section[1]/div/div/div/div/div/div[1]/div[1]/h1");
+    By Msgdashboard = By.cssSelector("h1 span");;
     By SignupLogin = By.xpath("//a[@href='/login']");
     By usernameloggedin = By.xpath("/html/body/header/div/div/div/div[2]/div/ul/li[10]/a/b");
     By deleteaccount = By.xpath("//a[@href='/delete_account']");
@@ -76,6 +80,13 @@ public class HomePage extends BasePage {
     public void CartLinkClick (){
 
         driver.findElement(viewcartlink).click();
+
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("footer"))); // ou un élément en bas
+
         ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight);");
+
+
     }
 }

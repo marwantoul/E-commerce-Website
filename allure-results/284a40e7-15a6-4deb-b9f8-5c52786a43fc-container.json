@@ -1,0 +1,1 @@
+{"uuid":"284a40e7-15a6-4deb-b9f8-5c52786a43fc","name":"Scenario: User Registration with a existing email","children":["81168313-2808-42c6-afc7-df75de98458d"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764230628602,"stop":1764230702363}],"afters":[],"start":1764230628598,"stop":1764230713156}
