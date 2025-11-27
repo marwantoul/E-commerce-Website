@@ -1,0 +1,1 @@
+{"uuid":"4a09e7df-f3da-4a10-bb56-d49813a971d2","name":"Scenario: Product list and details","children":["dae68240-9b54-4215-bc94-7faef0d9de22"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764229518477,"stop":1764229565569}],"afters":[],"start":1764229518461,"stop":1764229596265}

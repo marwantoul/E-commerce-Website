@@ -1,0 +1,1 @@
+{"uuid":"b2cccdda-7e53-47b4-8d10-2cd7c2f0132d","name":"Scenario: Add Products in the cart","children":["68cdc4d9-8371-471b-9d3c-b6eb5353669d"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764229518478,"stop":1764229564826}],"afters":[],"start":1764229518465,"stop":1764229600181}

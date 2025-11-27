@@ -1,0 +1,1 @@
+{"uuid":"309fac55-dc8e-4972-aa8d-d7871bd59e4d","name":"Scenario: Logout User","children":["872a4748-c022-433d-9a3d-b5fd9bf52cee"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764230628628,"stop":1764230680337}],"afters":[],"start":1764230628621,"stop":1764230712555}

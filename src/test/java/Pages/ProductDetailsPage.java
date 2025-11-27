@@ -11,7 +11,7 @@ public class ProductDetailsPage extends BasePage {
     public ProductDetailsPage(WebDriver driver) {
         super(driver);
     }
-    By productInformation = By.cssSelector(".product-information");
+    By productInformation = By.xpath("/html/body/section/div/div/div[2]/div[2]/div[2]");
 
 
     public void IsProductDetailsDisplay() {

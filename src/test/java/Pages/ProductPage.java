@@ -1,11 +1,9 @@
 package Pages;
 
 import Base.BasePage;
+import Utils.ScreenshotUtil;
 import org.junit.Assert;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -118,11 +116,32 @@ public class ProductPage extends BasePage {
 
     }
 
-    public void ClickViewCartBouton (){
 
-        driver.findElement(ViewCartBouton).click();
+    public void ClickViewCartBouton() {
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(12));
+
+        try {
+            // Attendre que l'élément soit cliquable
+            WebElement viewCart = wait.until(ExpectedConditions.elementToBeClickable(ViewCartBouton));
+
+            // Scroll centré (évite header fixe)
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block:'center'});", viewCart);
+
+            // Hover pour activer si nécessaire
+            new Actions(driver).moveToElement(viewCart).pause(Duration.ofMillis(200)).perform();
+
+            // Clic normal
+            viewCart.click();
+
+        } catch (ElementNotInteractableException e) {
+            // Fallback JS si intercepté ou masqué
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", driver.findElement(ViewCartBouton));
+        } catch (TimeoutException te) {
+            throw te;
+        }
     }
+
 
     public void VerifyProductInCart (){
 
@@ -138,16 +157,3 @@ public class ProductPage extends BasePage {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

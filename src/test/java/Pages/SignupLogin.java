@@ -1,3 +1,4 @@
+
 package Pages;
 
 import Base.BasePage;
@@ -11,13 +12,13 @@ public class SignupLogin extends BasePage {
     }
 
 
-    By MsgSignupLogin = By.xpath("/html/body/section/div/div/div[3]/div/h2");
+    By MsgSignupLogin = By.xpath("//h2[contains(text(),'New User Signup!')]");
     By NameInput = By.xpath("//input[@name='name']");
-    By emailInput = By.xpath("/html/body/section/div/div/div[3]/div/form/input[3]");
-    By buttonInput = By.xpath("/html/body/section/div/div/div[3]/div/form/button");
-    By emailloginInput = By.xpath("/html/body/section/div/div/div[1]/div/form/input[2]");
-    By passwordloginInput = By.xpath("/html/body/section/div/div/div[1]/div/form/input[3]");
-    By loginbutton = By.xpath("/html/body/section/div/div/div[1]/div/form/button");
+    By emailInput = By.cssSelector("input[data-qa='signup-email']");
+    By buttonInput = By.cssSelector("button[data-qa='signup-button']");
+    By emailloginInput = By.cssSelector("input[data-qa='login-email']");
+    By passwordloginInput = By.cssSelector("input[data-qa='login-password']");
+    By loginbutton = By.cssSelector("button[data-qa='login-button']");
     By ErrorMessage = By.xpath("/html/body/section/div/div/div[1]/div/form/p");
     By LoginPageMEssage = By.xpath("/html/body/section/div/div/div[1]/div[1]/h2");
     By ErrorMessageExistingemail = By.xpath("/html/body/section/div/div/div[3]/div/form/p");

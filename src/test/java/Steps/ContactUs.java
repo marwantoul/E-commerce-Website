@@ -3,6 +3,7 @@ package Steps;
 import Factory.DriverFactory;
 import Pages.Contactus;
 import Pages.SignupLogin;
+import Utils.ScreenshotUtil;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
@@ -52,11 +53,12 @@ public class ContactUs {
         contactUs.handleConfirmationPopup();
     }
     @Then("the user verify that the successfully submit is visible")
-    public void the_user_verify_that_the_successfully_submit_is_visible() {
+    public void the_user_verify_that_the_successfully_submit_is_visible() throws Exception {
 
         String message = contactUs.getSuccessMessage();
         Assert.assertTrue(message.contains("Success!"), "Submit confirmation not visible");
         System.out.println("Confirmation message: " + message);
+        ScreenshotUtil.takeScreenshot(DriverFactory.getDriver(), "Contact Us");
 
     }
 }

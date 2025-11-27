@@ -1,3 +1,4 @@
+
 package Pages;
 
 import Base.BasePage;
@@ -34,27 +35,27 @@ public class Contactus extends BasePage {
         return ContactusMessage;
     }
 
-        public void ContactUswithfullinformation(){
-            driver.findElement(username).sendKeys("Test");
-            driver.findElement(useremail).sendKeys("Test@ff.com");
-            driver.findElement(subject).sendKeys("subject");
-            driver.findElement(message).sendKeys("message");
+    public void ContactUswithfullinformation(){
+        driver.findElement(username).sendKeys("Test");
+        driver.findElement(useremail).sendKeys("Test@ff.com");
+        driver.findElement(subject).sendKeys("subject");
+        driver.findElement(message).sendKeys("message");
 
 
-            String filePath = "C:\\Users\\marwa.antoul\\Downloads\\18_11_2025_11_56_1017_Journal des caisses.pdf";
-            File file = new File(filePath);
-            if(file.exists()) {
-                driver.findElement(PieceJointe).sendKeys(filePath);
-            } else {
-                System.out.println("Fichier introuvable : " + filePath);
-            }
-
+        String filePath = "C:\\Users\\marwa.antoul\\Downloads\\18_11_2025_11_56_1017_Journal des caisses.pdf";
+        File file = new File(filePath);
+        if(file.exists()) {
+            driver.findElement(PieceJointe).sendKeys(filePath);
+        } else {
+            System.out.println("Fichier introuvable : " + filePath);
         }
 
-        public void SubmitClic () {
-            driver.findElement(SubmitButton).click();
+    }
 
-        }
+    public void SubmitClic () {
+        driver.findElement(SubmitButton).click();
+
+    }
 
     public void handleConfirmationPopup() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -70,8 +71,4 @@ public class Contactus extends BasePage {
         return successMessage.getText();
     }
 
-    }
-
-
-
-
+}

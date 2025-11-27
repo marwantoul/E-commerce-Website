@@ -1,0 +1,1 @@
+{"uuid":"9f5e317b-f11c-423f-9287-b1a11ce41a6e","name":"Scenario: Login with valid credentials","children":["8263389a-3f10-4397-8c77-1f9fd8e92ba0"],"befores":[{"name":"Hooks.Hooks.setup()","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1764230930954,"stop":1764230979193}],"afters":[],"start":1764230930953,"stop":1764231004947}

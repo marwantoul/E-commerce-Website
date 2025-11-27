@@ -27,4 +27,3 @@ public class AccountDelete extends BasePage {
 
     }
 }
-

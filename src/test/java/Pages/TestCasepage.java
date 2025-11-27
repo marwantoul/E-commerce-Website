@@ -23,4 +23,3 @@ public class TestCasepage extends BasePage {
     }
 
 }
-

@@ -31,7 +31,7 @@ public class AddproductsInCart {
     @Then("The user select a second product and click Add to cart")
     public void the_user_select_a_second_product_and_click_Add_to_cart() {
 
-       product.AddProduct2InCart();
+        product.AddProduct2InCart();
         System.out.println("✅ Deuxième produit est ajouté dans le panier avec succès");
 
     }
@@ -64,6 +64,5 @@ public class AddproductsInCart {
             Assert.assertEquals(calculatedTotal, expectedTotal, 0.01, "Total price incorrect");
         }
 
-        driver.quit();
     }
 }
