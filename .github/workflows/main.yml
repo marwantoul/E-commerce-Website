@@ -3,7 +3,7 @@ name: Run Selenium Tests
 
 on:
   push:
-    branches: ["master3"]  # ou main si c'est la branche par défaut
+    branches: ["master3"] # ou ta branche par défaut
 
 jobs:
   test:
@@ -16,8 +16,9 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: "11"
-          cache: maven
+          distribution: 'temurin'   # OBLIGATOIRE
+          java-version: '11'
+          cache: 'maven'
 
       - name: Install Chrome
         uses: browser-actions/setup-chrome@latest
