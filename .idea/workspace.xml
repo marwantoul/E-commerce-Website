@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d99babb0-3804-4ed3-b775-6745ca72eed8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/Workflow/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/Workflow/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/Workflow/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
