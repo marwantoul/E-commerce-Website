@@ -3,7 +3,7 @@ name: Run Selenium Tests
 
 on:
   push:
-    branches: ["master2"]  # ou main si c'est la branche par défaut
+    branches: ["master3"]  # ou main si c'est la branche par défaut
 
 jobs:
   test:
