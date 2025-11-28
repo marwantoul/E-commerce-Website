@@ -1,0 +1,15 @@
+name : Run selenium Test // nom de l'action
+on:
+  push:
+    branches: ["master"]
+    jobs:
+      test:
+        runs-on: macos-latest
+        steps:
+          - uses: actions/checkout@v3
+          - users: action/setup-java@v3
+            with:
+              java-version: "11"
+              cache: maven
+          - uses: browser-actions/setup-chrome@latest
+          - run: mvn clean test
