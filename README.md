@@ -12,10 +12,10 @@
 
 ✅ Test Case 7: Verify Test Cases Page -> OK
 
-✅ Test Case 8: Verify All Products and product detail page
+✅ Test Case 8: Verify All Products and product detail page -> OK
 
-✅ Test Case 9: Search Product
+✅ Test Case 9: Search Product -> OK
 
-✅ Test Case 10: Verify Subscription in home page
+✅ Test Case 10: Verify Subscription in home page -> OK
 
-✅ Test Case 11: Add Products in Cart
+✅ Test Case 11: Add Products in Cart -> OK
