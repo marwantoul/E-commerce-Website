@@ -18,34 +18,4 @@
 
 ✅ Test Case 10: Verify Subscription in home page
 
-✅ Test Case 11: Verify Subscription in Cart page
-
-✅ Test Case 12: Add Products in Cart
-
-✅ Test Case 14: Place Order: Register while Checkout
-
-✅ Test Case 15: Place Order: Register before Checkout
-
-✅ Test Case 16: Place Order: Login before Checkout
-
-✅ Test Case 17: Remove Products From Cart
-
-✅ Test Case 18: View Category Products
-
-✅ Test Case 19: View & Cart Brand Products
-
-✅ Test Case 20: Search Products and Verify Cart After Login
-
-✅ Test Case 21: Add review on product
-
-✅ Test Case 22: Add to cart from Recommended items
-
-✅ Test Case 23: Verify address details in checkout page
-
-✅ Test Case 24: Download Invoice after purchase order
-
-✅ Test Case 25: Verify Scroll Up using 'Arrow' button and Scroll Down functionality
-
-✅ Test Case 26: Verify Scroll Up without 'Arrow' button and Scroll Down functionality
-
-✅ Test Case 27 :Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
+✅ Test Case 11: Add Products in Cart
